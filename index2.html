@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEER CAPTURE</title>
+</head>
+<body> <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d6d;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 3px;
+      width: 25px;
+      background-color: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: #000;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BEER CAPTURE</div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('active');
+    }
+  </script>
+
+  <BR>
+      <div class="img-container">
+    <img src="C:\Users\ds373\Pictures\WhatsApp Image 2025-04-05 at 21.31.29_e4967de2.jpg" height="500px">
+    <img src="C:\Users\ds373\Pictures\WhatsApp Image 2025-04-05 at 21.31.59_bbc5b1b7.jpg" height="500px">
+    <img src="C:\Users\ds373\Pictures\WhatsApp Image 2025-04-05 at 21.31.28_51038a63.jpg" height="500px">
+    <img src="C:\Users\ds373\Pictures\WhatsApp Image 2025-04-05 at 21.31.58_70c1a8c0.jpg" height="500px">
+  </div>
+
+  <div class="about-section">
+    <h3>About BEER CAPTURE</h3>
+    <p>
+      At <strong>BEER CAPTURE</strong>, we believe every wedding is a timeless story waiting to be captured. With a creative eye and a passion for storytelling, we specialize in candid, traditional, and cinematic wedding photography and videography.
+      <br><br>
+      From the emotional rituals to the grand celebrations, we preserve each moment with care and creativity—so you can relive your special day for a lifetime. Based in [Your City], we’ve covered countless love stories across India, blending artistry with emotion in every frame.
+      <br><br>
+      Let us be a part of your big day—and turn your memories into masterpieces.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 BEER CAPTURE. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/yepiamraj96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+        <a href="https://www.facebook.com/share/16KTFFyyBx">Facebook</a>
+        <a href="https://youtube.com/@beercapture4409?si=tAnkCR2vePXiid0U">YouTube</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

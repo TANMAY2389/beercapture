@@ -1,0 +1,34 @@
+/* Reset */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #d3cece;
+    text-align: center;
+    padding: 0px 20px;
+    
+  }
+  
+  /* Image Styling */
+  #BRIDE1 img {
+  
+    width: 300px; /* chhota rakha hai */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  #BRIDE1 img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Heading Style */
+  
